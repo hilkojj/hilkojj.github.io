@@ -1,10 +1,19 @@
 
 html {
-    background: rgb(24, 36, 53);
+    background: rgb(16, 21, 27);
 }
 html, body {
     padding: 0;
     margin: 0;
+    font-family: 'Kreon', serif;
+}
+
+a {
+    color: rgb(190, 136, 0);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: serif;
 }
 
 .banner {
@@ -49,10 +58,15 @@ html, body {
 }
 
 .section {
-    background: rgb(255, 255, 255);
+    color: rgb(136, 147, 180);
+    background: rgba(32, 40, 70, 0.555);
     height: 500px;
     margin: 100px 0;
     font-size: 1.3rem;
+}
+
+.section b {
+    color: white;
 }
 
 .section img, .section video {
@@ -81,6 +95,7 @@ html, body {
     font-size: 35px;
     padding: 15px 50px;
     border-radius: 5px;
+    font-family: serif;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -101,9 +116,14 @@ html, body {
     }
 
     .section {
+        background: rgb(255, 255, 255);
+        color: rgb(0, 42, 82);
         height: auto;
         margin: 100px 0;
         font-size: 1.3rem;
         padding: 0 0 40px;
+    }
+    .section b {
+        color: black;
     }
 }
