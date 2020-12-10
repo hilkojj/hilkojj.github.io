@@ -5,9 +5,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Cphere</title>
-    <!-- <meta name="description" content=""> -->
-    <meta name="author" content="Hilko Janssen">
+    <title>Hilko Janssen</title>
 
     <link rel="stylesheet" href="cphere.css?v=1.0">
 
@@ -19,133 +17,149 @@
 
 <body>
 
-    <div class="banner">
-        <div class="vid-wrapper">
-            <video autoplay muted loop>
-                <source src="banner.mp4" type="video/mp4">
-            </video>
-            <div class="fade"></div>
-        </div>
-    </div>
+    <br><br><br> <!-- this is how CSS works, right? -->
+
     <div class="title">
-        <span>C</span>PHERE
+        Hilko Janssen
     </div>
     <div class="desc">
-        A (WIP) RTS/Citybuilder game that takes place on a procedurally generated spherical world.
+
+        Student HBO-ICT (Computer science) with interests in Game Development
+
+        <br> <br>
+
+        <a target="_blank" href="https://twitter.com/hilkojj">Twitter</a> | <a target="_blank" href="https://github.com/hilkojj">GitHub</a> | <a target="_blank" href="https://linkedin.com/in/hilkojanssen">LinkedIn</a>
     </div>
 
     <div class="section">
-        <img src="pic0.png">
+        <!-- <img src="cphere/pic0.png"> -->
+        <video autoplay muted loop style="margin-left: -200px;">
+            <source src="cphere/banner.mp4" type="video/mp4">
+        </video>
+
         <div class="text">
-            <h1>About</h1>
+            <h1>Cphere</h1>
 
-            After playing games like Anno 1404, Age of Empires and Civilization I fantasized about making a similar game
-            that takes place on a spherical earth instead of a flat earth.
-
-            <br>
-
-            I've had this idea for several years until recently I actually started working on it.
+            A 3D desktop/web game prototype.<br>
+            Built from scratch in C++ with OpenGL to learn more about 3D games and graphics.
 
             <br><br>
+            Features:
+            <ul>
+                <li>Ship pathfinding</li>
+                <li>Procedural world generation</li>
+                <li>Building system</li>
+            </ul>
 
-            The game is made in my <a href="https://github.com/hilkojj/cpp-game-utils" title="GitHub repository"
-                target="_blank">own C++ game engine using OpenGL</a>. I've learnt <i>a lot</i> about rendering 3D
-            graphics during this (unfinished) project.
+            <br><br>
+            <a class="webdemo-btn" href="/cphere/">Demo & more</a>
+        </div>
+    </div>
+
+    <div class="section right">
+   
+
+        <video autoplay muted loop style="margin-right: 200px;">
+            <source src="dib.mp4" type="video/mp4">
+        </video>
+
+        <div class="text">
+
+            <h1>dibidabidab</h1>
+
+            This is an (still unfinished) game made using my own <i>scriptable</i> Game Engine. (More info on the game engine below this page...)
+            <br><br>
+            I'm trying to make most animations in this game procedural (based on physics, wind, fluids, etc.).<br>
+            So far things like water, ropes, plants, trees, legs, jelly rainbows and more are animated procedurally.
+
+            <br><br>
+            <a class="webdemo-btn" href="/dibidabidab/">More gifs</a>
+            <br><br><br>
+            <a target="_blank" class="webdemo-btn" href="https://github.com/dibidabidab/game-without-a-name-and-unicorns">Repository</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <img src="https://camo.githubusercontent.com/0dcd26b149132726950ba885c14954bcf7f2b1e934d845b02725ccf00bdd6c34/68747470733a2f2f692e696d6775722e636f6d2f72496a4b4375372e676966">
+        <div class="text">
+            <img style="height: 200px !important; width: auto !important; float: none; margin: 0 !important;" src="https://raw.githubusercontent.com/timostrating/parkingsimulator/master/blender_files/logo/logo.png">
+            <br>
+            Together with someone else I transformed a simple simulation into an entire 2.5D game.
+            <br>
+            With graphics inspired by RollerCoaster Tycoon, this game simulates hundreds of little cars driving around using pathfinding.
 
             <br><br><br>
-            <a class="webdemo-btn" href="/webdemo_info.html">Web Demo</a>
+            <a target="_blank" class="webdemo-btn" href="https://github.com/timostrating/parkingsimulator">Repository</a>
         </div>
     </div>
 
-    <div class="section right">
-        <video autoplay muted loop controls>
-            <source src="water_beakdown.mp4" type="video/mp4">
-        </video>
+    <div class="section right" style="font-size: 1.2rem;">
+   
+        <img src="enginegui.png">
 
         <div class="text">
 
-            <h1>Water rendering</h1>
+            <h1>Scriptable C++ Game Engine</h1>
 
-            Initially I had zero experience writing 3D shaders, so the water shader was quite a challenge to make.
-            Making this water shader for a spherical surface, instead of a flat one, made this even harder.
+            This game engine is focuses on game data and logic.
+            <br>
+            It (partly) allows development <i>without</i> recompiling or even restarting your game. This speeds up development <i>a lot</i>.
+
             <br><br>
-            After learning about water caustics, reflections, the fresnel effect etc. I finally got to this result, of
-            which the breakdown can be seen in the video.
+            Features:
+            <ul style="font-size: 1rem;">
+                <li>Multiplayer</li>
+                <li>Saving and loading Levels</li>
+                <li>Live reloading of assets and scripts</li>
+                <li>Lua scripting (entity creation and logic)</li>
+                <li>Entity Inspector (edit entity-data at runtime)</li>
+                <li>Profiler</li>
+                <li>Cross Platform (Linux, Windows, and Web browsers)</li>
+            </ul>
+            <br>
+            <a target="_blank" class="webdemo-btn" href="https://github.com/dibidabidab/dibidab-engine">More info</a>
         </div>
     </div>
 
     <div class="section">
-        <video autoplay muted loop controls>
-            <source src="isl_gen.mp4" type="video/mp4">
-        </video>
-
+        <img src="destim.png">
         <div class="text">
-
-            <h1>Island generation</h1>
-
-            The video shows how the islands/continents in the game are generated.
-            <br><br>
-            Originally I started programming the game in Java (with LibGDX), but after I rewrote the whole thing in C++, the island generation became 20(!) times faster.
+            <h1>2D pixel platformer</h1>
             <br>
-            This was one of my motivations to rewrite the whole game in C++, which also gave a <i>huge</i> FPS boost.
-            
+            As final project for my secondary school (HAVO) I made my first <i>actual</i> game. Programmed in Java and pixel art made using Aseprite
+
+            <br><br>
+            This game features pathfinding and random level generation.
+
+            <br><br><br>
+            <a target="_blank" class="webdemo-btn" href="https://www.youtube.com/watch?v=YZ9NuabfzKY">Video</a>
         </div>
     </div>
 
-    <div class="section right">
-        
-        <img src="path_ico.png">
 
-        <div class="text">
-
-            <h1>Ship pathfinding</h1>
-
-            Ships in the game are able to travel around the world.
-            <br>
-            To make this possible there needs to be some sort of navigation graph.
-            <br><br>
-            For this, I made a icosphere generator that cuts out the islands, and subdivides triangles close to the coastline one extra time to give extra pathfinding precision. (see image for icosphere)
-
-            <br><br>
-            With this 3d graph you can use pathfinding algoritms, like A*, to find a path from A to B.
-            <br>
-            This path is then smoothed out to mask out sharp angles etc.
-            
-        </div>
-    </div>
 
     <div class="section">
-        <video autoplay muted loop controls>
-            <source src="building.mp4" type="video/mp4">
-        </video>
-
+   
         <div class="text">
 
-            <h1>Buildings & instanced rendering</h1>
+            <h1>Other projects</h1>
 
-            In the video you can see how buildings (only houses & trees for now) are being placed on an island grid.
+            <ul>
+                <li>
+                    <a target="_blank" href="https://github.com/HTML-as-programming-language/HTML-as-programming-language">A fake programming language that looks like HTML</a>
+                </li>
+                <br>
+                <li>
+                    <a target="_blank" href="https://github.com/timostrating/reversi_ai">Reversi/Othello Bot that won a competition at University 🏆</a>
+                </li>
+                <br>
+                <li>
+                    <a target="_blank" href="https://github.com/hilkojj/OpticalNumbrixSolver">Optical Numbrix Solver</a>
+                </li>
+            </ul>
             
-            <br><br>
-            To render the trees and other buildings I use instanced rendering.
-            <br>
-            That means that thousands of trees can be rendered in only 1 draw call instead of thousands.
-            This eliminates the waiting time between CPU and GPU and therefore greatly increases peformance.
         </div>
     </div>
-
-    <div class="section right">
-        <video autoplay muted loop controls>
-            <source src="earth_breakdown.mp4" type="video/mp4">
-        </video>
-
-        <div class="text">
-
-            <h1>Graphics breakdown</h1>
-
-            Here's a simple video showing all graphical features.
-        </div>
-    </div>
-
 
 </body>
 

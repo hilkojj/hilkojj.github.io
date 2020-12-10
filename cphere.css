@@ -1,6 +1,6 @@
 
 html {
-    background: rgb(16, 21, 27);
+    background: rgb(22, 29, 37);
 }
 html, body {
     padding: 0;
@@ -9,7 +9,7 @@ html, body {
 }
 
 a {
-    color: rgb(190, 136, 0);
+    color: rgb(113, 127, 255);
 }
 
 h1, h2, h3, h4, h5 {
@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5 {
 
 .title {
     font-family: "Times New Roman", Times, serif;
-    color: rgb(255, 228, 179);
+    color: rgb(255, 248, 147);
     text-align: center;
     font-size: 3.4rem;
     margin-top: 20px;
@@ -58,8 +58,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .section {
-    color: rgb(136, 147, 180);
-    background: rgba(32, 40, 70, 0.555);
+    color: rgb(156, 168, 206);
+    background: rgba(28, 39, 78, 0.555);
     height: 500px;
     margin: 100px 0;
     font-size: 1.3rem;
@@ -88,14 +88,21 @@ h1, h2, h3, h4, h5 {
     padding: 30px 100px;
 }
 
+.section h1 {
+    color: #eb808a;
+}
+
 .webdemo-btn {
     text-decoration-line: none;
-    background: rgb(81, 163, 108);
+    background: rgb(80, 153, 137);
     color: white;
-    font-size: 35px;
-    padding: 15px 50px;
+    font-size: 28px;
+    padding: 12px 30px;
     border-radius: 5px;
     font-family: serif;
+}
+.webdemo-btn:hover {
+    background: rgb(81, 163, 108);
 }
 
 @media only screen and (max-width: 1500px) {
